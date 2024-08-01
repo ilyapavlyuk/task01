@@ -68,7 +68,7 @@ public class Main {
             is.close();
         } catch (IOException e) {
             System.out.println("Не удалось прочитать файл");
-            is.close();
+            Objects.requireNonNull(is).close();
             System.exit(0);
         }
 
